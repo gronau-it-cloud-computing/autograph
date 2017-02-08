@@ -4,6 +4,8 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
+
+	"go.mozilla.org/autograph/signer"
 )
 
 func (a *autographer) addMonitoring(monitoring authorization) {
@@ -17,10 +19,6 @@ func (a *autographer) addMonitoring(monitoring authorization) {
 }
 
 func (a *autographer) handleMonitor(w http.ResponseWriter, r *http.Request) {
-	if r.Method != "GET" {
-		httpError(w, http.StatusMethodNotAllowed, "%s method not allowed; endpoint accepts GET only", r.Method)
-		return
-	}
 	userid, authorized, err := a.authorize(r, []byte(""))
 	if err != nil || !authorized {
 		httpError(w, http.StatusUnauthorized, "authorization verification failed: %v", err)
@@ -31,49 +29,26 @@ func (a *autographer) handleMonitor(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	sigresps := make([]signatureresponse, len(a.signers)*2)
-	for i, signer := range a.signers {
-		for j, template := range []string{"", "content-signature"} {
-			var (
-				hash                       []byte
-				alg, encodedcs, encodedsig string
-			)
-			sigreq := signaturerequest{
-				// base64 of the string 'AUTOGRAPH MONITORING'
-				Input:    "QVVUT0dSQVBIIE1PTklUT1JJTkc=",
-				Template: template,
-			}
-			alg, hash, err = templateAndHash(sigreq, signer.ecdsaPrivKey.Curve.Params().Name)
-			if err != nil {
-				httpError(w, http.StatusInternalServerError, "%v", err)
-				return
-			}
-			ecdsaSig, err := signer.sign(hash)
-			if err != nil {
-				httpError(w, http.StatusInternalServerError, "signing failed with error: %v", err)
-				return
-			}
-			encodedsig, err = encode(ecdsaSig, signer.siglen, sigreq.Encoding)
-			if err != nil {
-				httpError(w, http.StatusInternalServerError, "encoding failed with error: %v", err)
-				return
-			}
-			if sigreq.Template == "content-signature" {
-				encodedcs, err = signer.ContentSignature(ecdsaSig)
-				if err != nil {
-					httpError(w, http.StatusInternalServerError, "failed to retrieve content-signature: %v", err)
-					return
-				}
-			}
-			sigresps[i*2+j] = signatureresponse{
-				Ref:              id(),
-				SignerID:         signer.ID,
-				X5U:              signer.X5U,
-				PublicKey:        signer.PublicKey,
-				Hash:             alg,
-				Encoding:         sigreq.Encoding,
-				Signature:        encodedsig,
-				ContentSignature: encodedcs,
-			}
+	for i, s := range a.signers {
+		// base64 of the string 'AUTOGRAPH MONITORING'
+		_, hash := s.Hash([]byte("AUTOGRAPH MONITORING"))
+		sig, err := s.Sign(hash)
+		if err != nil {
+			httpError(w, http.StatusInternalServerError, "signing failed with error: %v", err)
+			return
+		}
+		csig := sig.(signer.Signature)
+		encodedsig, err := csig.Marshal()
+		if err != nil {
+			httpError(w, http.StatusInternalServerError, "encoding failed with error: %v", err)
+			return
+		}
+		sigresps[i] = signatureresponse{
+			Ref:       id(),
+			SignerID:  s.Config().ID,
+			X5U:       s.Config().X5U,
+			PublicKey: s.Config().PublicKey,
+			Signature: encodedsig,
 		}
 	}
 	respdata, err := json.Marshal(sigresps)

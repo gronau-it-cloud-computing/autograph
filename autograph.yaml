@@ -7,20 +7,116 @@ server:
 signers:
     # a p384 key, the standard
     - id: appkey1
-      privatekey: "MIGkAgEBBDAzX2TrGOr0WE92AbAl+nqnpqh25pKCLYNMTV2hJHztrkVPWOp8w0mhscIodK8RMpagBwYFK4EEACKhZANiAATiTcWYbt0Wg63dO7OXvpptNG0ryxv+v+JsJJ5Upr3pFus5fZyKxzP9NPzB+oFhL/xw3jMx7X5/vBGaQ2sJSiNlHVkqZgzYF6JQ4yUyiqTY7v67CyfUPA1BJg/nxOS9m3o="
+      type: contentsignature
+      privatekey: |
+          -----BEGIN EC PARAMETERS-----
+          BgUrgQQAIg==
+          -----END EC PARAMETERS-----
+          -----BEGIN EC PRIVATE KEY-----
+          MIGkAgEBBDART/nn3fKlhyENdc2u3klbvRJ5+odP0kWzt9p+v5hDyggbtVA4M1Mb
+          fL9KoaiAAv2gBwYFK4EEACKhZANiAATugz97A6HPqq0fJCGom9PdKJ58Y9aobARQ
+          BkZWS5IjC+15Uqt3yOcCMdjIJpikiD1WjXRaeFe+b3ovcoBs4ToLK7d8y0qFlkgx
+          /5Cp6z37rpp781N4haUOIauM14P4KUw=
+          -----END EC PRIVATE KEY-----
 
     # a p256 key
     - id: appkey2
-      privatekey: "MHcCAQEEIFB72ld2Ga9bAiVE8/IzNfFskDCnu7Ws8iJDcgzDbwlToAoGCCqGSM49AwEHoUQDQgAESGiwKilbISFLmmeEI83U5qtAuq3ktoKfWKgzbC5rkpEVIzaaYOpdbrtLkvBqK0SxIJOf2nVgmdIfLYY8JXWH5Q=="
+      type: contentsignature
+      privatekey: |
+          -----BEGIN EC PARAMETERS-----
+          BggqhkjOPQMBBw==
+          -----END EC PARAMETERS-----
+          -----BEGIN EC PRIVATE KEY-----
+          MHcCAQEEII+Is30aP9wrB/H6AkKrJjMG8EVY2WseSFHTfWGCIk7voAoGCCqGSM49
+          AwEHoUQDQgAEMdzAsqkWQiP8Fo89qTleJcuEjBtp2c6z16sC7BAS5KXvUGghURYq
+          3utZw8En6Ik/4Om8c7EW/+EO+EkHShhgdA==
+          -----END EC PRIVATE KEY-----
 
     # p521, for testing, don't use p521
     - id: appkey3
-      privatekey: "MIHcAgEBBEIAE1XrqPG1wKb/3TTlmZ4abd+aJQ1eT7xmTA+hIY5Nj6B4wY4G570M9Xxke5LP0kx1nMZRAoQGG5w5M1mE6oFWw2GgBwYFK4EEACOhgYkDgYYABAAYziNDPmlSc82ukUtXpI/Hc7TQ9GeVKGd4FXVY79wpzS4DwPRalfOdI1/EIPQheNHHXCMupZFVzC01cQSQ1gM16QH+AoQSjixV0lrbeJQgzz6lAFTyTjEYZw6rzx5ur+ubt/dWBMO6XkYYgIpr7AesDlN5OPyy7bKHxTWArci+2DXekw=="
+      type: contentsignature
+      privatekey: |
+          -----BEGIN EC PARAMETERS-----
+          BgUrgQQAIw==
+          -----END EC PARAMETERS-----
+          -----BEGIN EC PRIVATE KEY-----
+          MIHcAgEBBEIBb+JY2KAiKqVOycgfvf9wH4onO93x6Dy/3bHuzj6wmW4rSAmuNHPq
+          yzdZSKDGPG5RxqdhgukMGwwrBgPfFJv5nDGgBwYFK4EEACOhgYkDgYYABAAVXz2h
+          oKyWlpcSecUoJgrvljyu/bSD7Z+onU7vT/FUFFaMK8fgwv3LVWQR8xgoAVWLiiiu
+          hB8RHyT8OaePachoHAFNFqVcGFkGZOLj2m60HH9tNTb1tBMDE08FBtcE7wImRn94
+          b/r392628ghQ8x7A4JzUvp0InWipIV0g+tJ4tw0hWw==
+          -----END EC PRIVATE KEY-----
 
     # Normandy dev chain with x5u on github
     - id: normankey
-      privatekey: "MIGkAgEBBDCZFHf46zW7Wp5fgwc2zL42+Uir4qCj/MMxqhXhRuGQMCR0+RWLqE0DpX0gjKsqWT2gBwYFK4EEACKhZANiAARUQqIIAiTBGDVUWw/wk5h1IXpreq+BtE+gQr15O4tusHpCLGjOxwpHiJYnxk45fpE8JGAV19UOhmqMUEU0k31C1EGTSZW0ducSvHrh3a8wXShZ6dxLWHItbbCGA6A7Puk="
+      type: contentsignature
+      privatekey: |
+        -----BEGIN EC PARAMETERS-----
+        BgUrgQQAIg==
+        -----END EC PARAMETERS-----
+        -----BEGIN EC PRIVATE KEY-----
+        MIGkAgEBBDCZFHf46zW7Wp5fgwc2zL42+Uir4qCj/MMxqhXhRuGQMCR0+RWLqE0D
+        pX0gjKsqWT2gBwYFK4EEACKhZANiAARUQqIIAiTBGDVUWw/wk5h1IXpreq+BtE+g
+        Qr15O4tusHpCLGjOxwpHiJYnxk45fpE8JGAV19UOhmqMUEU0k31C1EGTSZW0ducS
+        vHrh3a8wXShZ6dxLWHItbbCGA6A7Puk=
+        -----END EC PRIVATE KEY-----
       x5u: "https://raw.githubusercontent.com/mozilla-services/autograph/master/docs/statics/normandy.content-signature.mozilla.org-20210705.dev.chain"
+
+#    - id: addonsigner
+#      type: xpi
+#      privatekey: |
+#          -----BEGIN PRIVATE KEY-----
+#          MIIJRAIBADANBgkqhkiG9w0BAQEFAASCCS4wggkqAgEAAoICAQCXD3F4Q/DMxejk
+#          5+amdC+5V9fjxICyoSPYNR8cQ2A1bqeGZtJGYTxphUpZpenlTvfTr7x3QJR4UBgi
+#          Bu4fsNXKeuplo36XL7UB9t7kaCmX4lt48tY1Fq73V6JcUbdbWmaLI86PvTj/E7xu
+#          i6SY+wL6lImA+MGJ0CbbdIzUTeHejFH0MImr0kubkwbsXWSeE7D7xCPiL+AOD0qG
+#          0s8ZIO/S0zL7BrQy0L+5zeYTLPU9fBC+RpyCqKp0kAlNHZ9gje0t0IkPnGzkVrEm
+#          Kgk49YFGxYel93bhAf8qS3MlhW6niZjx4pI2PKvKS42UgSGIkyWC8r2JSnTOUJXg
+#          v8bgTZzDwn7a8MCx41hOA3ewvbe5NEeccjnrbohywsDnELbnJKe0YBSqL4jDb94H
+#          ZM8FWqTpJXLGkZEbHL+jjEyiTbHSVSAy6zxdcDAAYWxEAeuAS9Li+JZBbaV12yc0
+#          OpoFDUL3iZH1FjqAfnAP+hrSOCdGkH70IJaAmCOo8TZ/3jb5OTlfShToV0tnZw37
+#          d8B1OOrIOclzrnbNbulKzqAEwTRZZEveZuMyF9Ur7tPdfgik4iyvOfmYhbQJVNmz
+#          69wZNxoS92efOmnumuEFBMekj0FV3NfHsweKsSqhXPmryMpXHGDEYVT/q7gA8bVD
+#          OVcusd1PAcASuUS3XnEcdhRAQyJmNQIDAQABAoICAGybhtqQBn5DwLlrXfLJUFKy
+#          rJ6u9lT39DyLnO2GJ5LjFwFTxdUiLfw0AAvKdQsQJrCFBjy7KsQB2ggE8YnJazyj
+#          +QjQbsCmZT6fTwvrNBRmg5vHBGmxAGUHFc3IVssQiO969BV2V5dVikH0logC2NZu
+#          mxomP4glJvrbpjEyObX3LykhCKqHjSKyp+SjFSduQu4QzDfgcffJ2KxsvsdzXdo3
+#          TM0cucxbN62QMt4QkdX98E/NltN+Due1c2qFZMRX5nHtH84gik31YnJtAKp6INNQ
+#          S8Hw1QDbnai8DHKqp68/B77JRpRGNMFCZu2hlgmKugqXGdyusqJvYALx/zvfsVgX
+#          IEF12zzvfZqrLaDdkuaCobIT1q7TwKYQb8SPs9xqZPMt394cQ0fCUrAFA6/mkL5s
+#          Z2OCoCwjBUYNvWPF7A8RZQlFsbwMGxQ3YQDMn+911KIL70Lh5iSyBF19IqyqlkTv
+#          8tx0K//qYRSvE96pZwG1sDaTPvmX6CaLRfOaNDdKZFNvgRhy2co1QuyFp+5+gm03
+#          6oApzlSXZHwPmYm0mf+cZ24PU6zqzysBLcqRv7XbWDNQ9rznaFmpBzzicygtgRET
+#          ZyEWH91VKc3ouOXmLABReU9ucl50Q0PqkdFFo39QDGLwMKR1pk8Y4kTWhOne4LY2
+#          pf46NdYzFVQu6kcJ7XzVAoIBAQDG7CZ6Dy+el4b2vJSPcY6VaLN6Wr7/JDnv869g
+#          rzdrHKyactkgNvQALPgi+WWeJuqDUo2uPV/KXq21rHImUg25DMP3gnK22ex8yUXr
+#          xDij8zOtSRui9jlMOs2sNx2rCUEcOBfLiaJKSeQk/9oSl9y5/VKu43CBJFuhVeWM
+#          8uBlRGtw3m1UIKt/i0Sx5k3FpAbSLWsjhmRV+YcYzQmuImsomk01wGU0MrPboJzJ
+#          CpckAQQmwjcV03wl1T72C4ql3IHx+Lx9cNYdJP7P3fkHSJYhPD1RqYsZOnj1sPeZ
+#          +W7B82yM3ZxIdSrDk0x2VAL811anwf/MVzsprX3o/frHDsHfAoIBAQDCZ5RhgC2J
+#          QWYU8EnfIzRPbXKfYovt9RFxuCXuCmQ1mtfFnZQ1fXWWLUz//5KyEtEgEKbMbxU/
+#          phcOVXbsTSpQXwZ4cd7estsvlDrePOcqgAlZblmZt13Z5jRFRHapqNko0zWfRSsJ
+#          Lz57tlsldXLBVY0E0AsrCovEoYaW1PCBh1YRcShhoU9fl1mQ0VMXc+qfmUBPtI1s
+#          nxj1tq2nGcDHL+CvKvsv4bMt5jrQjB0lL7ZZBnveNzPwM3VseOm1aZT5U8Lgm9Lv
+#          4zkr2fs/+/k5CuALatkeXqHuTV8nMz2fPQWG5UB79gPAaQINhGYx79ijCIcdm4O1
+#          p65e76dOQGJrAoIBAQDAzm/U6xc63qAAU3SjPGv5QUyFEaQC5PgLLeUVD3/loBtk
+#          cGEnqlwCN5QjQhxOmGXB96g/9Fj+a5pvdsAFiI6oiEkBhDzwInXn1aaiCMTllHrI
+#          QQ46e/G5g12KyLlG6GdllLDrpXHaE5jAjASw9OUKmRElVmnbooP18q3WWitJvHFv
+#          KwhI/Il9zF0/GXzUTlIWMdOg0Ug7VOqvDT2OvOmkpzqjGOJ/H43ZGOoeqtcoHJwL
+#          fT+rNhslCHZIQZOXhA2nnXIFG/NMuGkKzZnsh1yMxjihCHY8c8J+UZMMeQnzj5/t
+#          QXeTe42BlyoLnw5uR8JEQ/NN+lbr5K8fv9zsR899AoIBAQCdnn2fz90bu/qYX3qF
+#          gHWZMJQOxkfN1zUdjsCyD5rQG4t2nhzcgawk5vXXWdAGsVr9NIMIncgMow1ugby6
+#          OpZkM6d7YFfjGAC+wuA38Ak9XDI4YFAlYZamZQ9cWfYb+NqZTyXazKnn+HYgt+mO
+#          pXs1ZbfAfy2O6C4KbyxAfsXBP4l4+tZS0gcY6g2kbROBoGpKnGaYOTuxJg2Gq2aA
+#          ZVD4LsltPNwMJmKwhEqLbA71Z4nhBHDJ6tghmJdMK3zRqZkvzcnjcnPEK+betw4P
+#          Aq0+oqKkny0Kgo+oNvM/RTxhL4ibpqRx3TWNe5Y+f2qccmqjRPbH+p7/WcT3FDgC
+#          KhGhAoIBAQCTM03KwTNDfJNpiX7ewzgR30th/CP5MVNf+RjG/l8MUd0xMzFB908K
+#          Q+mDmItwkNVsdQZhR+2WlTVVfCrjmYYjB8s7u1OFlNakBvhplM/8jzn3qldpRt6p
+#          j7d5gewuUIgS3slNMoZ0tsMpkeSH4QD8D/F07JnqMIdgXypqWTPrRnoi0OGcZzIN
+#          p8m8Hq5vC8sLCll0+9MVDnzDt0XrfxunBpHLQy09laOhmHYHxgCTTdcLZwbON0zW
+#          PhmyOIyuT3OxPblApgyJ3xDqhcorQ0JTYoVxi2oQWziyLgkGOj+lDySrNUxWP8VK
+#          osDGHMM7SdPXpNKBdA4JbmhZDXLY3sYf
+#          -----END PRIVATE KEY-----
 
 authorizations:
     - id: alice
@@ -30,6 +126,7 @@ authorizations:
           - appkey2
           - appkey3
           - normankey
+          - addonsigner
 
     - id: bob
       key: 9vh6bhlc10y63ow2k4zke7k0c3l9hpr8mo96p92jmbfqngs9e7d

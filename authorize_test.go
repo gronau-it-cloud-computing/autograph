@@ -13,7 +13,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/mozilla-services/hawk-go"
+	"go.mozilla.org/hawk"
 )
 
 func TestMissingAuthorization(t *testing.T) {

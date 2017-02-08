@@ -1,0 +1,387 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "cT6+XPBZiXsFbb7cXT6AYNrZyuM=",
+			"path": "github.com/Sirupsen/logrus",
+			"revision": "3f603f494d61c73457fb234161d8982b9f0f0b71",
+			"revisionTime": "2017-02-07T18:34:08Z"
+		},
+		{
+			"checksumSHA1": "p2G+kNnEwzZCUbUWwzCG/Jc0Ews=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws",
+			"path": "github.com/aws/aws-sdk-go/aws",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "Y9W+4GimK4Fuxq+vyIskVYFRnX4=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/awserr",
+			"path": "github.com/aws/aws-sdk-go/aws/awserr",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "+q4vdl3l1Wom8K1wfIpJ4jlFsbY=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/awsutil",
+			"path": "github.com/aws/aws-sdk-go/aws/awsutil",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "/232RBWA3KnT7U+wciPS2+wmvR0=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/client",
+			"path": "github.com/aws/aws-sdk-go/aws/client",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "ieAJ+Cvp/PKv1LpUEnUXpc3OI6E=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/client/metadata",
+			"path": "github.com/aws/aws-sdk-go/aws/client/metadata",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "c1N3Loy3AS9zD+m5CzpPNAED39U=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/corehandlers",
+			"path": "github.com/aws/aws-sdk-go/aws/corehandlers",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "zu5C95rmCZff6NYZb62lEaT5ibE=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/credentials",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "KQiUK/zr3mqnAXD7x/X55/iNme0=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "NUJUTWlc1sV8b7WjfiYc4JZbXl0=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/credentials/endpointcreds",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials/endpointcreds",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "4Ipx+5xN0gso+cENC2MHMWmQlR4=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/credentials/stscreds",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials/stscreds",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "DwhFsNluCFEwqzyp3hbJR3q2Wqs=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/defaults",
+			"path": "github.com/aws/aws-sdk-go/aws/defaults",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "8E0fEBUJY/1lJOyVxzTxMGQGInk=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/ec2metadata",
+			"path": "github.com/aws/aws-sdk-go/aws/ec2metadata",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "5Ac22YMTBmrX/CXaEIXzWljr8UY=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/request",
+			"path": "github.com/aws/aws-sdk-go/aws/request",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "eOo6evLMAxQfo7Qkc5/h5euN1Sw=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/session",
+			"path": "github.com/aws/aws-sdk-go/aws/session",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "diXvBs1LRC0RJ9WK6sllWKdzC04=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/aws/signer/v4",
+			"path": "github.com/aws/aws-sdk-go/aws/signer/v4",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "Esab5F8KswqkTdB4TtjSvZgs56k=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/private/endpoints",
+			"path": "github.com/aws/aws-sdk-go/private/endpoints",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "wk7EyvDaHwb5qqoOP/4d3cV0708=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/private/protocol",
+			"path": "github.com/aws/aws-sdk-go/private/protocol",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "pNeF0Ey7TfBArH5LBQhKOQXQbLY=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/private/protocol/json/jsonutil",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/json/jsonutil",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "R00RL5jJXRYq1iiK1+PGvMfvXyM=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/private/protocol/jsonrpc",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/jsonrpc",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "ZqY5RWavBLWTo6j9xqdyBEaNFRk=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/private/protocol/query",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/query",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "5xzix1R8prUyWxgLnzUQoxTsfik=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/private/protocol/query/queryutil",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/query/queryutil",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "TW/7U+/8ormL7acf6z2rv2hDD+s=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/private/protocol/rest",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/rest",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "eUEkjyMPAuekKBE4ou+nM9tXEas=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "ghoZkkKxN0lAJZ6Nb0sJiiFiQAI=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/service/kms",
+			"path": "github.com/aws/aws-sdk-go/service/kms",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "daBdiel0OZjiTAi05xdclIpZ0CY=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/service/kms/kmsiface",
+			"path": "github.com/aws/aws-sdk-go/service/kms/kmsiface",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "ouwhxcAsIYQ6oJbMRdLW/Ys/iyg=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/service/sts",
+			"path": "github.com/aws/aws-sdk-go/service/sts",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "FCeEm2BWZV/n4oTy+SGd/k0Ab5c=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/aws/aws-sdk-go/vendor/github.com/go-ini/ini",
+			"path": "github.com/go-ini/ini",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "iIUYZyoanCQQTUaWsu8b+iOSPt4=",
+			"path": "github.com/gorilla/context",
+			"revision": "1c83b3eabd45b6d76072b66b746c20815fb2872d",
+			"revisionTime": "2015-08-20T05:12:45Z"
+		},
+		{
+			"checksumSHA1": "DOGELl/eJ66TomAnkQqKminijQU=",
+			"path": "github.com/gorilla/mux",
+			"revision": "26a6070f849969ba72b72256e9f14cf519751690",
+			"revisionTime": "2015-12-31T16:19:08Z"
+		},
+		{
+			"checksumSHA1": "d9PxF1XQGLMJZRct2R8qVM/eYlE=",
+			"path": "github.com/hashicorp/golang-lru",
+			"revision": "0a025b7e63adc15a622f29b0b2c4c3848243bbf6",
+			"revisionTime": "2016-08-13T22:13:03Z"
+		},
+		{
+			"checksumSHA1": "9hffs0bAIU6CquiRhKQdzjHnKt0=",
+			"path": "github.com/hashicorp/golang-lru/simplelru",
+			"revision": "0a025b7e63adc15a622f29b0b2c4c3848243bbf6",
+			"revisionTime": "2016-08-13T22:13:03Z"
+		},
+		{
+			"checksumSHA1": "lJDwzzEBuS9sjxVOSsq7+rvw+cA=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/go.mozilla.org/sops/vendor/github.com/howeyc/gopass",
+			"path": "github.com/howeyc/gopass",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "0ZrwvB6KoGPj2PoDNSEJwxQ6Mog=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/github.com/jmespath/go-jmespath",
+			"path": "github.com/jmespath/go-jmespath",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "lG0iwgcdNKChdgYPVPKF+hVxnbg=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/go.mozilla.org/sops/vendor/github.com/mozilla-services/yaml",
+			"path": "github.com/mozilla-services/yaml",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "ynJSWoF6v+3zMnh9R0QmmG6iGV8=",
+			"path": "github.com/pkg/errors",
+			"revision": "248dadf4e9068a0b3e79f02ed0a610d935de5302",
+			"revisionTime": "2016-10-29T09:36:37Z"
+		},
+		{
+			"checksumSHA1": "B+T6ka2erar1XVeyVIW/anBYo9I=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/go.mozilla.org/sops/vendor/go.mozilla.org/gopgagent",
+			"path": "go.mozilla.org/gopgagent",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "YGGqKTwh1bcwaSdOMzCb2zpOaL4=",
+			"path": "go.mozilla.org/hawk",
+			"revision": "b9704677ebefdeb77a3c0167e15b852d08d5ad98",
+			"revisionTime": "2016-06-02T14:47:17Z"
+		},
+		{
+			"checksumSHA1": "9uyyX8j/FrpGQmma7IEyG1yNsNw=",
+			"path": "go.mozilla.org/mozlog",
+			"revision": "f4350d8f1cad600a1200703365a185c2009bf5e1",
+			"revisionTime": "2016-06-10T17:06:54Z"
+		},
+		{
+			"checksumSHA1": "iuAFaD8syCOhyZZjix0vTgQI0NQ=",
+			"path": "go.mozilla.org/mozlogrus",
+			"revision": "011a6e72803ac0c0e4222c15de09ed6218bcda5b",
+			"revisionTime": "2016-07-11T17:11:55Z"
+		},
+		{
+			"checksumSHA1": "hP/dDhhJAjZTVhquBMkfjYpq4kA=",
+			"path": "go.mozilla.org/pkcs7",
+			"revision": "69755d72d7cb163664b34e5951155909c759e993",
+			"revisionTime": "2017-02-06T18:02:18Z"
+		},
+		{
+			"checksumSHA1": "zx5GH5H1h2pbLsHOgrmOT2hO4+I=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/go.mozilla.org/sops",
+			"path": "go.mozilla.org/sops",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "car1JBpMrDRFXJ7siFkowNHDBls=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/go.mozilla.org/sops/aes",
+			"path": "go.mozilla.org/sops/aes",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "gEVeZKvo+Cdn/axNlAdSyFlESLM=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/go.mozilla.org/sops/kms",
+			"path": "go.mozilla.org/sops/kms",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "Lj475xPTvc1yNgfqMlz/o+vnblE=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/go.mozilla.org/sops/pgp",
+			"path": "go.mozilla.org/sops/pgp",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "pehoXax5HEvtKbaXEut1Wlhjqxk=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/go.mozilla.org/sops/yaml",
+			"path": "go.mozilla.org/sops/yaml",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "TT1rac6kpQp2vz24m5yDGUNQ/QQ=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/golang.org/x/crypto/cast5",
+			"path": "golang.org/x/crypto/cast5",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "UNPfK0hrYqgqblnilzpI4gj8ffA=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/golang.org/x/crypto/openpgp",
+			"path": "golang.org/x/crypto/openpgp",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "olOKkhrdkYQHZ0lf1orrFQPQrv4=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/golang.org/x/crypto/openpgp/armor",
+			"path": "golang.org/x/crypto/openpgp/armor",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "eo/KtdjieJQXH7Qy+faXFcF70ME=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/golang.org/x/crypto/openpgp/elgamal",
+			"path": "golang.org/x/crypto/openpgp/elgamal",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "rlxVSaGgqdAgwblsErxTxIfuGfg=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/golang.org/x/crypto/openpgp/errors",
+			"path": "golang.org/x/crypto/openpgp/errors",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "YnE37Em/WQNj+OCV6NaES8K+6hg=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/golang.org/x/crypto/openpgp/packet",
+			"path": "golang.org/x/crypto/openpgp/packet",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "s2qT4UwvzBSkzXuiuMkowif1Olw=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/golang.org/x/crypto/openpgp/s2k",
+			"path": "golang.org/x/crypto/openpgp/s2k",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "9C4Av3ypK5pi173F76ogJT/d8x4=",
+			"origin": "go.mozilla.org/autograph/tools/autograph-monitor/vendor/golang.org/x/crypto/ssh/terminal",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": "97724d4e79c0f2cd0d86e2654afde3131e92e081",
+			"revisionTime": "2017-02-08T19:17:23Z"
+		},
+		{
+			"checksumSHA1": "uTQtOqR0ePMMcvuvAIksiIZxhqU=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "d75a52659825e75fff6158388dddc6a5b04f9ba5",
+			"revisionTime": "2016-12-14T18:38:57Z"
+		},
+		{
+			"checksumSHA1": "0KwOlQV1dNUh9X8t+5s7nX5bqfk=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "a3f3340b5840cee44f372bddb5880fcbc419b46a",
+			"revisionTime": "2017-02-08T14:18:51Z"
+		}
+	],
+	"rootPath": "go.mozilla.org/autograph"
+}

@@ -8,12 +8,15 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"net/http"
+
+	log "github.com/Sirupsen/logrus"
 )
 
 func httpError(w http.ResponseWriter, errorCode int, errorMessage string, args ...interface{}) {
-	log.Printf("%d: %s", errorCode, fmt.Sprintf(errorMessage, args...))
+	log.WithFields(log.Fields{
+		"code": errorCode,
+	}).Errorf(errorMessage, args...)
 	http.Error(w, fmt.Sprintf(errorMessage, args...), errorCode)
 	return
 }
